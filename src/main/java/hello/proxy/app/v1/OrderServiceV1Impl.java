@@ -3,9 +3,9 @@ package hello.proxy.app.v1;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class OrderServiceV1Impl implements OrderServiceV1 {
+public class OrderServiceV1Impl implements OrderServiceV2 {
 
-    private final OrderRepositoryV1 orderRepository;
+    private final OrderRepositoryV2 orderRepository;
 
     @Override
     public void orderItem(String itemId) {
